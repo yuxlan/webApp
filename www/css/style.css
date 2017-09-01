@@ -1,0 +1,281 @@
+@charset "utf-8";
+
+/* 
+ * written by YuXLan
+ * 
+ */
+
+
+/* global */
+.bar.bar-stable .title{
+	color: #FFFFFF;
+	font-family: "微软雅黑";
+}
+
+.bar.bar-stable{
+	border: none;
+}
+
+[nav-bar-transition="android"] [nav-bar="active"] .bar, 
+[nav-bar-transition="android"] [nav-bar="entering"] .bar,
+[nav-bar-transition="android"] .title, 
+[nav-bar-transition="android"] .buttons,
+[nav-bar-transition="ios"] [nav-bar="active"] .bar, 
+[nav-bar-transition="ios"] [nav-bar="entering"] .bar
+,[nav-bar-transition="ios"] .title, 
+[nav-bar-transition="ios"] .buttons{
+	background-color: #FFFFFF;
+}
+
+.tabs-top.tabs-striped .tab-item.tab-item-active, 
+.tabs-top.tabs-striped .tab-item.active, 
+.tabs-top.tabs-striped .tab-item.activated{
+	border: 1px solid #abd13d;
+}
+
+ion-tabs.tabs-color-active-positive .tab-item.tab-item-active, 
+ion-tabs.tabs-color-active-positive .tab-item.active, 
+ion-tabs.tabs-color-active-positive .tab-item.activated{
+	color: #abd13d;
+}
+
+.tabs{
+	background-color: #FFFFFF;
+}
+
+textarea, input[type="text"], 
+input[type="password"],
+ input[type="datetime"], 
+ input[type="datetime-local"],
+ input[type="date"], 
+ input[type="month"], 
+ input[type="time"],
+ input[type="week"], 
+ input[type="number"], 
+ input[type="email"], 
+ input[type="url"], 
+ input[type="search"], 
+ input[type="tel"], 
+ input[type="color"]{
+ 	height:auto;
+ }
+/* global end */
+
+
+
+/* tabs  */
+.tabs-style .fa-1{
+	font-size: 18px;
+	padding-top: 10px;
+}
+
+.tabs-style .fa{
+	font-size: 15px;
+	padding-top: 11px;
+}
+/* tabs end */
+
+
+
+/* cloth */
+label.item-input-wrapper,
+label.item-input-wrapper input{
+	background: #F5F5F5;
+	border: 1px solid #F7F7F7;
+}
+label.item-input-wrapper{
+	width: 230px;
+}
+
+.bar.bar-stable .title{
+	display: none;
+}
+
+.icon.ion-arrow-left-c,
+.icon.ion-qr-scanner{
+	color: #BBBBBB;
+	font-size: 22px;
+	margin: 7px 28px 0 10px;
+}
+
+.icon.ion-ios-camera-outline{
+	color: #BBBBBB;
+	font-size: 30px;
+	margin: 3px 10px 0 0;
+}
+
+.icon.ion-share{
+	color: #BBBBBB;
+	font-size: 25px;
+	margin: 5px 10px 0 0;
+}
+
+.card{
+	box-shadow: none;
+	border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+h4{
+	width: 100%;
+	text-align: center;
+	padding-bottom: 10px;
+	padding-top: 5px;
+}
+
+.item.item-body p big{
+	font-size: 25px;
+}
+
+div.row.cloth-detail-footer{
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	margin-top: 30px;
+}
+
+div.row.cloth-detail-footer div.col:last-child{
+	text-align: right;
+	margin-top: 3px;
+}
+
+.platform-android .action-sheet .action-sheet-title, .platform-android .action-sheet .button,.action-sheet .button{
+	text-align: center;
+	font-size: 20px;
+	color: #BBBBBB;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+/* cloth end */
+
+
+/* food */
+.icon-right.ion-android-arrow-dropdown{
+	margin: 0 5px 0 10px;
+}
+
+a.food-list h2{
+	font-size: 16px;
+}
+
+a.food-list p{
+	margin-top: 4px;
+	font-size: 12px;
+}
+
+a.food-list i:first-child{
+	margin-right: 15px;
+}
+
+a.food-list i{
+	color: #FF0000;
+	margin-right: 10px;
+}
+/* food end */
+
+
+/* house */
+div.house-list{
+	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+	padding: 15px 0 15px 0;
+}
+
+div.house-list .col-25:first-child img{
+	width: 50%;
+	margin-left: 20%;
+}
+
+div.house-list img{
+	width: 70%;
+}
+
+div.house-list p{
+	width: 100%;
+}
+
+div.house-list p:last-child{
+	color: #CCCCCC;
+}
+
+div.house-list div.col-50,
+div.house-list div.col-25:last-child{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+/* house end */
+
+
+/* account */
+.account-part .card{
+	margin: 0;
+	background-color: #abd13d;
+	border: none;
+	border-radius: 0;
+}
+
+.account-part div.card:first-child{
+	padding: 10px 0 10px 0;
+}
+
+.account-part div.card:last-child{
+	padding: 55px 0 65px 105px;
+	margin-top: -1px;
+}
+
+.account-part div.card-1.card{
+	padding: 55px 0 65px 0;
+}
+
+.account-part div.card-1.card a,.account-part div.card-1.card a h2,.account-part div.card-1.card a p{
+	background-color: #abd13d;
+	color: #FFFFFF;
+}
+
+.account-part div.row{
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.account-part div.row div.col:last-child{
+	text-align: right;
+}
+
+.account-part .card i{
+	float: right;
+	color: #FFFFFF;
+	font-size: 27px;
+	margin-right: 20px;
+	margin-top: 1px;
+}
+
+.account-part .card i:first-child{
+	margin-top: 0;
+}
+
+.account-part .card button{
+	background: none;
+	box-shadow: none;
+	border: 1px solid #FFFFFF;
+	color: #FFFFFF;
+	padding: 0 40px;
+}
+
+.bar.bar-balanced.loginReg{
+	border-color: #abd13d;
+    background-color: #abd13d;
+    background-image: linear-gradient(0deg, #abd13d, #abd13d 50%, transparent 50%);
+    color: #fff;
+}
+
+.loginReg .button.button-balanced{
+	border-color: #abd13d;
+    background-color: #abd13d;
+    color: #fff;
+    width: 100%;
+}
+
+.item-input{
+	padding: 15px 0 15px 16px;
+}
+
+.button.button-clear i.ion-ios-close-empty{
+	font-size: 35px;
+}
+/* account end */

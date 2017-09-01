@@ -1,0 +1,24 @@
+<ion-view title="{{foodList.title}}">
+	<ion-nav-buttons side="left">
+		<i class="icon ion-arrow-left-c" ng-click="goBack()"></i>
+	</ion-nav-buttons>
+	<ion-nav-buttons side="right">
+		<i class="icon ion-share" ng-click="share()"></i>
+	</ion-nav-buttons>
+	
+   <ion-content>
+        <div>
+		  <h4>{{foodList.title}}</h4>
+		  <div class="item item-avatar">
+		    <img src="img/author-header.jpg">
+		    <p>作者：{{foodList.author}}</p>
+		    <p>来源：美食天下</p>
+		  </div>
+		  <div class="item item-body">
+		  	<div ng-repeat="img in foodList.img">
+		    	<img class="full-image" ng-src="{{img}}">
+		    </div>
+		  </div>
+		</div>
+   </ion-content>
+</ion-view>

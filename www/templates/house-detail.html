@@ -1,0 +1,25 @@
+<ion-view title="{{houseList.title}}">
+	<ion-nav-buttons side="left">
+		<i class="icon ion-arrow-left-c" ng-click="goBack()"></i>
+	</ion-nav-buttons>
+	<ion-nav-buttons side="right">
+		<i class="icon ion-share" ng-click="share()"></i>
+	</ion-nav-buttons>
+	
+   <ion-content>
+        <div>
+		  <h4>{{houseList.title}}</h4>
+		  <div class="item item-avatar">
+		    <img src="img/author-header.jpg">
+		    <p>作者：{{houseList.author}}&nbsp;&nbsp;&nbsp;&nbsp;{{houseList.date}}</p>
+		    <p>来源：手艺活</p>
+		  </div>
+		  <div class="item item-body">
+		    <p><big>{{houseList.content | detailTextFirst:houseList.content}}</big>{{houseList.content | detailTextOthor:houseList.content}}</p>
+		  	<div ng-repeat="img in houseList.img">
+		    	<img class="full-image" ng-src="{{img}}">
+		    </div>
+		  </div>
+		</div>
+   </ion-content>
+</ion-view>

@@ -1,0 +1,63 @@
+<ion-view view-title="个人中心" hide-nav-bar="true">
+<ion-content bindonce="user" class="account-part">
+    <ion-refresher pulling-text="下拉刷新" on-refresh="doRefresh()"></ion-refresher>
+  	<div>
+	  	<div class="card">
+	  		<i class="ion-ios-chatbubble-outline"></i>
+	  		<i class="ion-ios-gear-outline"></i>
+	  	</div>
+	  	<div class=" card card-1">
+	        <a class="item item-avatar" href="#">
+	            <img src="img/author-header.jpg">
+	            <h2><span>YuXLan</span></h2>
+	            <p>积分：<span>0</span></p>
+	        </a>
+		</div>
+		</div>
+    <ion-list>
+        <ion-item>
+            邮箱
+            <span class="item-note">1763630782@qq.com</span>
+        </ion-item>
+        <ion-item>
+            性别
+            <span class="item-note">女</span>
+        </ion-item>
+        <ion-item>
+            出生年月
+            <span class="item-note">1996-5</span>
+        </ion-item>
+        <ion-item>
+            省份
+            <span class="item-note">浙江省</span>
+        </ion-item>
+        <ion-item>
+            城市
+            <span class="item-note">杭州市</span>
+        </ion-item>
+        <ion-item>
+            个性签名
+            <span class="item-note">愿，平安喜乐，一生顺遂</span>
+        </ion-item>
+        <ion-item>
+            电话
+            <span class="item-note">13735501806</span>
+        </ion-item>
+        <ion-item>
+            QQ
+            <span class="item-note">1763630782</span>
+        </ion-item>
+        <ion-item>
+            微博
+            <span class="item-note">二三不过十</span>
+        </ion-item>
+        <ion-item>
+            注册时间
+            <span class="item-note">2017-3</span>
+        </ion-item> 
+        <ion-item>
+            <button ng-click="logout()" class="button button-full button-assertive">注销
+            </button>
+        </ion-item>
+    </ion-list>
+</ion-view>

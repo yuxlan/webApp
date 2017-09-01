@@ -1,0 +1,25 @@
+<ion-view title="{{clothList.title}}">
+	<ion-nav-buttons side="left">
+		<i class="icon ion-arrow-left-c" ng-click="goBack()"></i>
+	</ion-nav-buttons>
+	<ion-nav-buttons side="right">
+		<i class="icon ion-share" ng-click="share()"></i>
+	</ion-nav-buttons>
+	
+   <ion-content>
+        <div>
+		  <h4>{{clothList.title}}</h4>
+		  <div class="item item-avatar">
+		    <img src="img/author-header.jpg">
+		    <p>作者：{{clothList.author}}&nbsp;&nbsp;&nbsp;&nbsp;{{clothList.date}}</p>
+		    <p>来源：ElleChina</p>
+		  </div>
+		  <div class="item item-body">
+		    <p><big>{{clothList.contentDetail | detailTextFirst:clothList.contentDetail}}</big>{{clothList.contentDetail | detailTextOthor:clothList.contentDetail}}</p>
+		  	<div ng-repeat="img in clothList.img">
+		    	<img class="full-image" ng-src="{{img}}">
+		    </div>
+		  </div>
+		</div>
+   </ion-content>
+</ion-view>

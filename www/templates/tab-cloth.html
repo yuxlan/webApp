@@ -1,0 +1,45 @@
+<ion-view view-title="衣" >
+	  <!--hide-nav-bar="true"-->
+	  	
+	<ion-nav-buttons side="left">
+		<i class="icon ion-qr-scanner" ng-click="scanner()"></i>
+	  <label class="item-input-wrapper">
+	    <i class="icon ion-ios-search placeholder-icon"></i>
+	    <input type="search" placeholder="背心+牛仔">
+	  </label>
+	</ion-nav-buttons>
+	
+	<ion-nav-buttons side="right">
+		<i class="icon ion-ios-camera-outline"></i>
+	</ion-nav-buttons>
+	
+  <ion-content>
+  	<!-- 下拉刷新 -->
+    <ion-refresher pulling-text="下拉刷新" on-refresh="doRefresh()" refreshing-text="刷新成功"></ion-refresher>
+		    
+		<ion-slide-box show-pager="false" class="has-header" on-slide-changed="slideChanged($index)">
+		  <ion-slide ng-repeat="list in slides">
+		    
+        <div class="list card" ng-repeat="content in list.content" ng-click="goDetails(content)">
+        	<!-- href="#/tab/cloth/{{list.id}}"  -->
+				  <div class="item item-avatar">
+				    <img src="img/author-header.jpg">
+				    <h2>{{content.title}}</h2>
+				    <p>作者：{{content.author}}</p>
+				  </div>
+				  <div class="item item-body">
+				    <img class="full-image"  ng-src="{{content.img[0]}}">
+				    <p>{{content.content}}</p>
+				  </div>
+				</div>
+				
+				<!-- 上拉加载 -->
+        <ion-infinite-scroll ng-if="!hasmore" on-infinite="loadMore()" distance="1%"></ion-infinite-scroll>
+		  </ion-slide>
+		</ion-slide-box>
+  </ion-content>
+  
+  <ion-tabs class="tabs-striped tabs-top" delegate-handle="tab1" id="{{currentTabId}}">
+    <ion-tab ng-repeat="item in tabs" on-select="selectedTab($index)" title="{{item.name}}"></ion-tab>
+  </ion-tabs> 
+</ion-view>
